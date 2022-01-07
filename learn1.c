@@ -2,7 +2,7 @@
 // Created by Prime on 2022/1/2.
 //
 #include <time.h>
-#include <stdio.h>
+#include <stdio.h> //or #define printf __mingw_printf
 #include <string.h>
 # include "header/learn1.h"
 
@@ -59,8 +59,10 @@ void value_and_format(void){
     printf("int value. dec use %%d:%d\toctal use %%#o:%#o\thex use %%#x:%#x\n\n",my_i,my_i,my_i);
 
     unsigned my_u_i = 99;//unsigned or unsigned int
-    unsigned my_u_i_1 = 99u;/*when you declare variable,you can add lower u or upper U after the num.But in the conversion below, you must use lower letter*/
+    unsigned my_u_i_1 = 99u;
     unsigned my_u_i_2 = 99U;
+    /*when you declare variable,you can add lower u or upper U after the num.
+    * * But in the conversion specification below, you must use lower letter。Except the long double, it uses Lf,Le or Lg*/
     printf("unsigned int value. dec use %%u:%u\toctal use %%o:%o\thex use %%x:%x\n",my_u_i,my_u_i,my_u_i);
     printf("unsigned int value. dec use %%u:%u\toctal use %%#o:%#o\thex use %%#x:%#x\n\n",my_u_i,my_u_i,my_u_i);
 
@@ -86,10 +88,17 @@ void value_and_format(void){
     float my_f_1 = 1.1e3f;
     float my_f_2 = 1.1e3F;
     float my_f_3 = 1.1e3f;
-    printf("float value. dec use %%f:%f\tuse %%e:%e",my_f,my_f_3);
+    printf("float value. dec use %%f:%f\tuse %%e:%e\n\n",my_f,my_f_3);
 
     double my_d = 111.1;
-    printf("float value. dec use %%f:%f\tuse %%e:%e",my_d,my_d);
+    printf("double value. dec use %%f:%f\tuse %%e:%e\n\n",my_d,my_d);
+
+    long double my_lf = 9.1e9;
+    __mingw_printf("long double value.use %%Lf:%Lf\n\n",my_lf);
+    /*There must use __mingw_printf().The MinGw rely on MSVC,
+     * the double is 64 bit and the long double is 128 bit in MinGw,but long double in MSVC is 64 bit.
+     * It's conflict, they are not compatible。 */
+    //TODO
 
 
 }
