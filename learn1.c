@@ -6,9 +6,7 @@
 #include <string.h>
 # include "header/learn1.h"
 
-__attribute__((unused)) void value_location(unsigned int num){//access the memory address of num
-    printf( "The memory address of %d is %p \n",num,&num);
-}
+
 
 __attribute__((unused)) void now_time(){ //Pint the system time
     time_t t;
@@ -108,13 +106,6 @@ __attribute__((unused)) void default_value_print(void){
     unsigned num2 =4294967295;
     printf("max int is %d\n",num1);
     printf("max unsigned int is %u\n",num2);
-}
-__attribute__((unused)) void change_value_pointer(int a,int b){
-    printf("initial value is %d\t",a);
-    value_location(a);
-    *(&a) = b;
-    printf("now value is %d\t",a);
-    value_location(a);
 }
 
 __attribute__((unused)) void value_overflow(void){
