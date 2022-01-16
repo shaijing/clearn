@@ -2,7 +2,8 @@
 // Created by yulin on 2022/1/15.
 //
 /*C Prime Plus , chapter 9*/
-#include "header/learn4.h"
+#include "../header/learn4.h"
+
 
 #define NAME "GIGATHINK, INC."
 #define ADDRESS "101 Megabuck Plaza"
@@ -125,4 +126,111 @@ void to_binary(unsigned long n)   /* recursive function */
     putchar(r == 0 ? '0' : '1');
 
     return;
+}
+
+void ex_hotel(void){
+    int nights;
+    double hotel_rate;
+    int code;
+
+    while ((code = menu()) != QUIT)
+    {
+        switch(code)
+        {
+            case 1 : hotel_rate = HOTEL1;
+                break;
+            case 2 : hotel_rate = HOTEL2;
+                break;
+            case 3 : hotel_rate = HOTEL3;
+                break;
+            case 4 : hotel_rate = HOTEL4;
+                break;
+            default: hotel_rate = 0.0;
+                printf("Oops!\n");
+                break;
+        }
+        nights = getnights();
+        showprice(hotel_rate, nights);
+    }
+    printf("Thank you and goodbye.\n");
+}
+
+int menu(void)
+{
+    int code, status;
+
+    printf("\n%s%s\n", STARS, STARS);
+    printf("Enter the number of the desired hotel:\n");
+    printf("1) Fairfield Arms           2) Hotel Olympic\n");
+    printf("3) Chertworthy Plaza        4) The Stockton\n");
+    printf("5) quit\n");
+    printf("%s%s\n", STARS, STARS);
+    while ((status = scanf("%d", &code)) != 1  ||
+           (code < 1 || code > 5))
+    {
+        if (status != 1)
+            scanf("%*s");   // dispose of non-integer input
+        printf("Enter an integer from 1 to 5, please.\n");
+    }
+
+    return code;
+}
+
+int getnights(void)
+{
+    int nights;
+
+    printf("How many nights are needed? ");
+    while (scanf("%d", &nights) != 1)
+    {
+        scanf("%*s");       // dispose of non-integer input
+        printf("Please enter an integer, such as 2.\n");
+    }
+
+    return nights;
+}
+
+void showprice(double rate, int nights)
+{
+    int n;
+    double total = 0.0;
+    double factor = 1.0;
+
+    for (n = 1; n <= nights; n++, factor *= DISCOUNT)
+        total += rate * factor;
+    printf("The total cost will be $%0.2f.\n", total);
+}
+
+
+void ex_value_location(void){
+    int pooh = 2, bah = 5;             /* local to main()   */
+
+    printf("In main(), pooh = %d and &pooh = %p\n",pooh, &pooh);
+    printf("In main(), bah = %d and &bah = %p\n",bah, &bah);
+    mikado(pooh);
+
+}
+void mikado(int bah)                   /* define function   */
+{
+    int pooh = 10;                     /* local to mikado() */
+
+    printf("In mikado(), pooh = %d and &pooh = %p\n",pooh, &pooh);
+    printf("In mikado(), bah = %d and &bah = %p\n",bah, &bah);
+}
+
+
+void ex_value_change(){
+    int x = 5, y = 10;
+
+    printf("Originally x = %d and y = %d.\n", x , y);
+    interchange(&x, &y);
+    printf("Now x = %d and y = %d.\n", x, y);
+
+
+}
+void interchange(int * u, int * v){
+    int temp;
+    temp = *u;
+    *u = *v;
+    *v = temp;
 }
