@@ -2,7 +2,7 @@
 // Created by yulin on 2022/1/15.
 //
 /*C Prime Plus , chapter 9*/
-#include "../header/learn4.h"
+#include "../header/learn/learn4.h"
 
 
 #define NAME "GIGATHINK, INC."
@@ -125,7 +125,7 @@ void to_binary(unsigned long n)   /* recursive function */
         to_binary(n / 2);
     putchar(r == 0 ? '0' : '1');
 
-    return;
+
 }
 
 void ex_hotel(void){

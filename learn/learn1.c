@@ -4,11 +4,11 @@
 #include <time.h>
 #include <stdio.h> //or #define printf __mingw_printf
 #include <string.h>
-# include "../header/learn1.h"
+# include "../header/learn/learn1.h"
 
 
 
-__attribute__((unused)) void now_time(){ //Pint the system time
+void now_time(){ //Pint the system time
     time_t t;
     struct tm * lt;
     time (&t);//Get Unix Timestamp。
@@ -16,7 +16,7 @@ __attribute__((unused)) void now_time(){ //Pint the system time
     printf( "%d/%d/%d %d:%d:%d\n",lt->tm_year+1900, lt->tm_mon, lt->tm_mday, lt->tm_hour, lt->tm_min, lt->tm_sec);//输出结果
 }
 
-__attribute__((unused)) void default_value_size(){// access the size of default size of different number type
+void default_value_size(){// access the size of default size of different number type
     printf("Type char has a size of %zd bytes.\n", sizeof(char));
     printf("Type unsigned char has a size of %zd bytes.\n\n", sizeof(unsigned char));
 
@@ -96,31 +96,29 @@ void value_and_format(void){
     /*There must use __mingw_printf().The MinGw rely on MSVC,
      * the double is 64 bit and the long double is 128 bit in MinGw,but long double in MSVC is 64 bit.
      * It's conflict, they are not compatible。 */
-    //TODO
-
 
 }
 
-__attribute__((unused)) void default_value_print(void){
+void default_value_print(void){
     int num1 = 2147483647;
     unsigned num2 =4294967295;
     printf("max int is %d\n",num1);
     printf("max unsigned int is %u\n",num2);
 }
 
-__attribute__((unused)) void value_overflow(void){
+void value_overflow(void){
     float toobig = 3.4e38 * 100.0f;
     printf("%f\n",toobig);
 }
 
-__attribute__((unused)) void value_underflow(void){
+void value_underflow(void){
     float a,b;
     b = 2147483648.0F + 1.0;
     a = b - 2147483648.0F; //a should be 1.000000, but it is 0.000000
     printf("%f",a);
 }
 
-__attribute__((unused)) void value_not_match(void){
+void value_not_match(void){
     int n = 4;
     int m = 5;
     float f = 7.0f;
@@ -130,7 +128,7 @@ __attribute__((unused)) void value_not_match(void){
     printf("%d %d\n",f,g);
 }
 
-__attribute__((unused)) void char_array(void){
+void char_array(void){
     char char_array[40];
     printf("Please enter some word:");
     scanf("%s",char_array);
