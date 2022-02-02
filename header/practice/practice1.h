@@ -40,4 +40,9 @@ long double my_pow_f(double num,int n);
 void modulo(void);
 
 void temp_t();
+double c_to_fk(double te,char cr);
+double f_to_ck(double te,char cr);
+double k_to_cf(double te,char cr);
+
+
 #endif //C_PRACTICE1_H

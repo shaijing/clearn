@@ -28,7 +28,7 @@ void display(char cr, int line, int width);
 
 void ex_checking(void);
 // validate that input is an integer
-long get_long(void);
+long ex_get_long(void);
 // validate that range limits are valid
 bool bad_limits(long begin, long end, long low, long high);
 // calculate the sum of the squares of the integers

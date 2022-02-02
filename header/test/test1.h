@@ -11,6 +11,14 @@
 #include <stdlib.h>
 #include <string.h>            /* for strlen() */
 
-void t_scanf();
+void t_scanf(void);
 
+
+void w_s(void);
+
+void ch(void);
+
+void eof(void);
+
+void e(void);
 #endif //C_TEST1_H

@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/2.
 //
-#include "../header/learn/learn2.h"
+#include "../../header/learn/learn2.h"
 
 void ex_chr_op(void){
     char ch;
@@ -65,7 +65,7 @@ void ex_word_count(void){
 
     printf("Enter text to be analyzed (^Z to terminate):\n");
     prev = '\n';            // used to identify complete lines
-    while ((ch = getchar()) != EOF)
+    while ((ch = getchar()) != '|')
     {
         n_chars++;          // count characters
         if (ch == '\n')

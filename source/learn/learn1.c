@@ -4,7 +4,7 @@
 #include <time.h>
 #include <stdio.h> //or #define printf __mingw_printf
 #include <string.h>
-# include "../header/learn/learn1.h"
+# include "../../header/learn/learn1.h"
 
 
 
@@ -92,7 +92,7 @@ void value_and_format(void){
     printf("double value. dec use %%f:%f\tuse %%e:%e\n\n",my_d,my_d);
 
     long double my_lf = 9.1e9;
-    __mingw_printf("long double value.use %%Lf:%Lf\n\n",my_lf);
+    printf("long double value.use %%Lf:%Lf\n\n",my_lf);
     /*There must use __mingw_printf().The MinGw rely on MSVC,
      * the double is 64 bit and the long double is 128 bit in MinGw,but long double in MSVC is 64 bit.
      * It's conflict, they are not compatible。 */

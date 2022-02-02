@@ -2,7 +2,7 @@
 // Created by yulin on 2022/1/16.
 //
 /*C Prime Plus , chapter 10*/
-#include "../header/learn/learn5.h"
+#include "../../header/learn/learn5.h"
 
 
 void ex_auto_num_of_array(void){

@@ -1,7 +1,7 @@
 //
 // Created by yulin on 2022/1/15.
 //
-#include "../header/learn/learn3.h"
+#include "../../header/learn/learn3.h"
 void ex_echo(void){
     char ch;
 
@@ -149,7 +149,7 @@ void ex_checking(void){
 
 }
 
-long get_long(void)
+long ex_get_long(void)
 {
     long input;
     char ch;

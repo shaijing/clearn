@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/28.
 //
-#include "../header/practice/practice1.h"
+#include "../../header/practice/practice1.h"
 void int_to_char(){
     int asciicode;
     printf("Please type an ASCII code value(ctrl^d to quit):");
@@ -18,7 +18,7 @@ void gf_p(){
     printf("Please enter a floating-point value(ctrl^d to quit):");
     while(scanf("%f",&f)){
         printf("fixed-point notation: %-+15.3f.\n",f);
-        printf("exponential notation: %  -15e.\n",f);
+        printf("exponential notation: % -15e.\n",f);
         printf("p-count notation: %-15a.\n\n",f);
         printf("Please enter a floating-point value(ctrl^d to quit):");
     }
@@ -153,11 +153,57 @@ void modulo(){
         printf("Please enter an integer as the second operand:");
     }
 }
+
 void temp_t(){
-    double in_t;//input temperature
+    double in_t;//input
+    double ot_t;//input temperature
     char in_c;//input notation
     char in_tc;//translate notation
     printf("Please enter a temperature including notation:");
-    scanf("%lf",&in_t);
-    printf("%f",&in_t);
+    while(scanf("%lf%c %c", &in_t, &in_c, &in_tc)){
+        switch (in_c) {
+            case 'c':
+            case 'C':
+                ot_t = c_to_fk(in_t,in_tc);
+                break;
+            case 'f':
+            case 'F':
+                ot_t = f_to_ck(in_t,in_tc);
+                break;
+            case 'k':
+            case 'K':
+                ot_t = k_to_cf(in_t,in_tc);
+                break;
+            default:
+                printf("Error!\n");
+        }
+
+        printf("%.3f%c is %.3f%c\n",in_t,in_c,ot_t,in_tc);
+        printf("Please enter another temperature including notation:");
+    }
+
+}
+double c_to_fk(double te,char cr){
+    double res;
+    if (cr == 'f' || cr == 'F')
+        res = te * 1.8 + 32;
+    else
+        res = te + 273.16;
+    return res;
+}
+double f_to_ck(double te,char cr){
+    double res;
+    if (cr == 'k' || cr == 'K')
+        res = 5.0/9.0*(te-32)+273.16;
+    else
+        res = (te-32)/1.8;
+    return res;
+}
+double k_to_cf(double te,char cr){
+    double res;
+    if (cr == 'c' || cr == 'C')
+        res =te - 273.16;
+    else
+        res = (te-273.16)*1.8+32;
+    return res;
 }
