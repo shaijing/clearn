@@ -53,3 +53,13 @@ void eof(){
 }
 
 
+void pointer_1(void){
+    const int **pp2;
+    int *p1;
+    const int n = 13;
+    pp2 = &p1;
+    *p1 = 10;
+    printf("%d",n);
+}
+
+

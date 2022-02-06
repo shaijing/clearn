@@ -11,6 +11,10 @@
 #include <iso646.h>
 #include <stdlib.h>
 #include <string.h>            /* for strlen() */
+void exam1_ref(void);
+
 void exam1(void);
+
+void exam1_1(void);
 
 #endif //C_EXAM_H

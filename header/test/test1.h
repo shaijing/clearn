@@ -21,4 +21,6 @@ void ch(void);
 void eof(void);
 
 void e(void);
+
+void pointer_1(void);
 #endif //C_TEST1_H
