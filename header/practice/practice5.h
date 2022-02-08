@@ -27,5 +27,6 @@ double power_p(double,int);
 
 double power_p_r(double,int);
 
-void to_binary_be(int num,int base);//TODO
+void to_base_n(int x, int base);
+void to_binary_base(void);
 #endif //C_PRACTICE5_H

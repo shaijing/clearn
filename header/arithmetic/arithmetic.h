@@ -18,6 +18,10 @@ void bubble_sort(void);
 
 void bubble_sort_f(int[],int n);
 
+void quick_sort(void);
+void quick_sotr_f(int,int,double []);
+void bubble_sort_d_f(double num[],int n);
+
 
 
 #endif //C_ARITHMETIC_H

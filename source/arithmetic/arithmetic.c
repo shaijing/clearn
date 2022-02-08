@@ -49,7 +49,7 @@ void bubble_sort() {
 }
 
 void bubble_sort_f(int num[],int n){
-    int i, j, k;
+    int i, j;
     int temp;
     for (i = 0; i < n - 1; i++) {
         for (j = 0; j < n - 1; j++) {
@@ -60,4 +60,56 @@ void bubble_sort_f(int num[],int n){
             }
         }
     }
+}
+
+void bubble_sort_d_f(double num[],int n){
+    int i, j;
+    double temp;
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - 1; j++) {
+            if (num[j] > num[j + 1]) {
+                temp = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = temp;
+            }
+        }
+    }
+}
+
+
+void quick_sort(void){
+    int i,j,n;
+
+    scanf("%d",&n);
+    double ar[n];
+    for (i = 0;i  <n ;i++) {
+        scanf("%lf",&ar[i]);
+    }
+    quick_sotr_f(0,n,ar);
+    for (j = 0; j <n ;j ++) {
+        printf("%lf ",ar[j]);
+    }
+}
+void quick_sotr_f(int left,int right,double ar[]){//有问题 TODO
+    double temp,t;
+    int i,j;
+    if (left>right)
+        return;
+    temp = ar[left];
+    i=left,j=right;
+    while (i!=j){
+        while (ar[j]>=temp && i<j)
+            j--;
+        while (ar[i]<=temp &&i<j)
+            i++;
+        if (i<j){
+            t = ar[i];
+            ar[i] = ar[j];
+            ar[j]=t;
+        }
+    }
+    ar[left] = ar[i];
+    ar[i] = temp;
+    quick_sotr_f(left,i-1,ar);
+    quick_sotr_f(i+1,right,ar);
 }

@@ -149,3 +149,59 @@ void exam1_1(void){
     }
 
 }
+
+void exam2(void){
+    char a[14];
+    int sum =0;
+    int count =1;
+    for (int i = 0; i < 13; ++i) {
+        scanf("%c",&a[i]);
+    }
+    for (int i = 0; i < 11; ++i) {
+        if (a[i]==45)
+            continue;
+        sum +=(a[i]-48)*count;
+        count++;
+    }
+    if((a[12]-48)==sum%11)
+        printf("Right!\n");
+    else{
+        for (int i = 0; i < 12; ++i)
+            printf("%c",a[i]);
+        printf("%c\n",(sum%11==10)?'x':48+sum%11);
+
+    }
+}
+
+
+void exam3(void){
+    struct STUDENT{
+        int id;
+        char name[10];
+        float grade1;
+        float grade2;
+        float grade3;
+        float ave;
+    };
+    int n;
+    printf("Please enter tne n:");
+    scanf("%d",&n);
+    struct STUDENT student[n],temp;
+    printf("Please enter the value:\n");
+    for (int i = 0; i < n; ++i) {
+        scanf("%d %s %f %f %f",&student[i].id,student[i].name,&student[i].grade1,&student[i].grade2,&student[i].grade3);
+        student[i].ave=(student[i].grade1+student[i].grade2+student[i].grade3)/3;
+    }
+    for (int i = 0; i <n-1 ; ++i) {
+        for (int j = 0; j <n-1 ; ++j) {
+            if (student[j].ave<student[j+1].ave){
+                temp = student[j];
+                student[j]= student[j+1];
+                student[j+1]=temp;
+            }
+        }
+    }
+    for (int i = 0; i < n; ++i) {
+        printf("%d,%s,%.2f\n",student[i].id,student[i].name,student[i].ave);
+    }
+}
