@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/2/4.
 //
 
-#include "../../header/practice/practice6.h"
+#include "../../header/practice/practice_chapter_10.h"
 
 void to_show(void){
     //show((double []) {8, 3, 9, 2}, 4);

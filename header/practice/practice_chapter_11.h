@@ -4,7 +4,6 @@
 
 #ifndef C_PRACTICE7_H
 #define C_PRACTICE7_H
-#include "../../header/arithmetic/arithmetic.h"
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -42,3 +41,5 @@ void str_rev_dr(void);
 
 void str_rev_1(char *);
 void str_rev_1_dr(void);
+
+

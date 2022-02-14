@@ -23,4 +23,9 @@ void eof(void);
 void e(void);
 
 void pointer_1(void);
+
+void long_to_str(void);
+
+void a(void);
+
 #endif //C_TEST1_H

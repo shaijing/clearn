@@ -14,12 +14,18 @@
 #include <stdlib.h>
 void bucket_sort(void);//桶排序
 
-void bubble_sort(void);
 
-void bubble_sort_f(int[],int n);
+void bubble_sort_dr(void);
+void bubble_sort(int[],int n);
 
-void quick_sort(void);
-void quick_sotr_f(int,int,double []);
+void selection_sort(int [],int);
+void selection_sort_dr(void);
+
+void insertion_sort(int [],int);
+void insertion_sort_dr(void);
+void quick_sort(int,int,double []);
+void quick_sort_dr(void);
+
 void bubble_sort_d_f(double num[],int n);
 
 

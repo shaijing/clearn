@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/2/1.
 //
 
-#include "../../header/practice/practice4.h"
+#include "../../header/practice/practice_chapter_8.h"
 
 void file_eof(){
     int ch;

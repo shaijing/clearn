@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/1/31.
 //
 
-#include "../../header/practice/practice3.h"
+#include "../../header/practice/practice_chapter_7.h"
 
 void divisors() {
     unsigned long num;

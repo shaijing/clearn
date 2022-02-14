@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/1/30.
 //
 
-#include "../../header/practice/practice2.h"
+#include "../../header/practice/practice_chapter_6.h"
 
 void p_a() {
     char alphabet[26] = {97, 98, 99, 100, 101, 102, 103,

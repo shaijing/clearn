@@ -205,3 +205,39 @@ void exam3(void){
         printf("%d,%s,%.2f\n",student[i].id,student[i].name,student[i].ave);
     }
 }
+
+int DigitNum(const char * str){
+    int n = 0;
+    int i = 0;
+    while (*(str+i) !='\0'){
+        if('0'<=(*(str+i))&&(*(str+i))<='9')
+            n++;
+        i++;
+    }
+    return n;
+
+
+
+}
+
+void DigitNum_dr(void){
+    printf("%d", DigitNum("123ABC"));
+}
+void question_2(void){
+    int num[10]={10,9,5,4,-1,50,4,8,6,9};
+    int min = num[0];
+    int t_n;
+    for (int i = 0; i < 10; ++i) {
+        if(num[i]<min){
+            min = num[i];
+            t_n= i;
+        }
+    }
+    int t;
+    t = num[0];
+    num[0]=num[t_n];
+    num[t_n]= t;
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ",num[i]);
+    }
+}

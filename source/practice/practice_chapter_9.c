@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/2/2.
 //
 
-#include "../../header/practice/practice5.h"
+#include "../../header/practice/practice_chapter_9.h"
 
 int max_3num(int n1, int n2, int n3) {
     int max = n1;
@@ -25,7 +25,7 @@ int min_3num(int n1, int n2, int n3) {
 
 void max_3num_1(int *n1, int *n2, int *n3) {
     int array[3] = {*n1, *n2, *n3};
-    bubble_sort_f(array, 3);
+    bubble_sort(array, 3);
     *n1 = array[0];
     *n2 = array[1];
     *n3 = array[2];

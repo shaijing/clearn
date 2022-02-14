@@ -17,6 +17,7 @@ void show_n_char(char ch, int num){
 
     for (count = 1; count <= num; count++)
         putchar(ch);
+    putchar('\n');
 }
 
 void change_value_pointer(int a,int b){

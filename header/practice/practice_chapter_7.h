@@ -5,7 +5,7 @@
 #ifndef C_PRACTICE3_H
 #define C_PRACTICE3_H
 
-#include "practice1.h"
+#include "practice.h"
 
 //7.12
 void divisors(void);

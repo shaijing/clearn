@@ -21,4 +21,10 @@ void exam2(void);
 
 void exam3(void);
 
+int DigitNum(const char *);
+
+void DigitNum_dr(void);
+
+void question_2(void);
+
 #endif //C_EXAM_H

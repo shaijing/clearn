@@ -18,7 +18,7 @@ void bucket_sort() {/*桶排序简单版，浪费空间*/
 
 }
 
-void bubble_sort() {
+void bubble_sort_dr() {
     int n, i, j, k;
     int temp;
     printf("Please enter the n:");
@@ -48,7 +48,7 @@ void bubble_sort() {
     }
 }
 
-void bubble_sort_f(int num[],int n){
+void bubble_sort(int num[],int n){
     int i, j;
     int temp;
     for (i = 0; i < n - 1; i++) {
@@ -75,9 +75,43 @@ void bubble_sort_d_f(double num[],int n){
         }
     }
 }
+void selection_sort(int arr[],int len){
+    int temp,n;
+    for (int i = 0; i < len; ++i) {
+        int min = arr[i];
+        for (int j = i+1; j < len; ++j) {
+            if(arr[j]<min) {
+                min = arr[j];
+                n = j;
+            }
+        }
+        temp = arr[i];
+        arr[i] = arr[n];
+        arr[n] = temp;
+    }
 
+}
+void selection_sort_dr(void){
+    int a[10]={8,99,-1,55,-20,30,40,11,18,20};
+    selection_sort(a,10);
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ",a[i]);
+    }
+}
 
-void quick_sort(void){
+void insertion_sort(int num[],int len) { //didn't comprehension
+    int i, j, temp;
+    for (i = 1; i < len; i++) {
+        temp = num[i];
+        for (j = i; j > 0 && num[j - 1] > temp; j--)
+            num[j] = num[j - 1];
+
+    }
+}
+void insertion_sort_dr(void){
+
+}
+void quick_sort_dr(void){
     int i,j,n;
 
     scanf("%d",&n);
@@ -85,12 +119,12 @@ void quick_sort(void){
     for (i = 0;i  <n ;i++) {
         scanf("%lf",&ar[i]);
     }
-    quick_sotr_f(0,n,ar);
+    quick_sort(0,n,ar);
     for (j = 0; j <n ;j ++) {
         printf("%lf ",ar[j]);
     }
 }
-void quick_sotr_f(int left,int right,double ar[]){//有问题 TODO
+void quick_sort(int left,int right,double ar[]){//有问题 TODO
     double temp,t;
     int i,j;
     if (left>right)
@@ -110,6 +144,6 @@ void quick_sotr_f(int left,int right,double ar[]){//有问题 TODO
     }
     ar[left] = ar[i];
     ar[i] = temp;
-    quick_sotr_f(left,i-1,ar);
-    quick_sotr_f(i+1,right,ar);
+    quick_sort(left,i-1,ar);
+    quick_sort(i+1,right,ar);
 }

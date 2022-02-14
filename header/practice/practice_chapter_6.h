@@ -5,7 +5,7 @@
 #ifndef C_PRACTICE2_H
 #define C_PRACTICE2_H
 
-#include "practice1.h"
+#include "practice.h"
 
 //6.16
 void p_a(void);
