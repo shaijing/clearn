@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/1/28.
 //
 
-#ifndef C_PRACTICE1_H
-#define C_PRACTICE1_H
+#ifndef CLEARN_PRACTICE_H
+#define CLEARN_PRACTICE_H
 
 
 #include <ctype.h>
@@ -45,4 +45,4 @@ double f_to_ck(double te,char cr);
 double k_to_cf(double te,char cr);
 
 
-#endif //C_PRACTICE1_H
+#endif //CLEARN_PRACTICE_H

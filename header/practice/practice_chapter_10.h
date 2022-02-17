@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/2/4.
 //
 
-#ifndef C_PRACTICE6_H
-#define C_PRACTICE6_H
+#ifndef CLEARN_PRACTICE_CHAPTER_10_H
+#define CLEARN_PRACTICE_CHAPTER_10_H
 //10.13
 #include "../../header/arithmetic/arithmetic.h"
 #include <ctype.h>
@@ -65,4 +65,4 @@ double ca_av_a(double [][5],int);
 double g_max(double [][5],int);
 
 void p_r(double[],int ,double,double );
-#endif //C_PRACTICE6_H
+#endif //CLEARN_PRACTICE_CHAPTER_10_H

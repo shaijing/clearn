@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/2/2.
 //
 
-#ifndef C_EXAM_H
-#define C_EXAM_H
+#ifndef CLEARN_EXAM_H
+#define CLEARN_EXAM_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -27,4 +27,4 @@ void DigitNum_dr(void);
 
 void question_2(void);
 
-#endif //C_EXAM_H
+#endif //CLEARN_EXAM_H

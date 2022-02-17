@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/1/19.
 //
 /*C Prime Plus , chapter 11*/
-#ifndef C_LEARN6_H
-#define C_LEARN6_H
+#ifndef CLEARN_LEARN_CHAPTER_11_H
+#define CLEARN_LEARN_CHAPTER_11_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -120,4 +120,4 @@ void stsrt(char *strings[], int num);/* string-sort function */
 void ex_mod_str(void);
 void ToUpper(char *);
 int PunctCount(const char *);
-#endif //C_LEARN6_H
+#endif //CLEARN_LEARN_CHAPTER_11_H

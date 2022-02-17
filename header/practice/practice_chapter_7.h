@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/1/31.
 //
 
-#ifndef C_PRACTICE3_H
-#define C_PRACTICE3_H
+#ifndef CLEARN_PRACTICE_CHAPTER_7_H
+#define CLEARN_PRACTICE_CHAPTER_7_H
 
 #include "practice.h"
 
@@ -34,4 +34,4 @@ void p_prime(void);
 
 bool isPrime(unsigned long);
 
-#endif //C_PRACTICE3_H
+#endif //CLEARN_PRACTICE_CHAPTER_7_H

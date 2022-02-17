@@ -2,7 +2,7 @@
 // Created by yulin on 2022/1/15.
 //
 /*C Prime Plus , chapter 9*/
-#include "../../header/learn/learn4.h"
+#include "../../header/learn/learn_chapter_9.h"
 
 
 #define NAME "GIGATHINK, INC."

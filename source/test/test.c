@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/28.
 //
-#include "../../header/test/test1.h"
+#include "../../header/test/test.h"
 void t_scanf() {
     unsigned int a;
     scanf("%u", &a);

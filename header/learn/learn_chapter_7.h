@@ -7,8 +7,8 @@
 #include <stdbool.h>
 #include <iso646.h>
 
-#ifndef C_LEARN2_H
-#define C_LEARN2_H
+#ifndef CLEARN_LEARN_CHAPTER_7_H
+#define CLEARN_LEARN_CHAPTER_7_H
 void ex_chr_op(void);
 
 void ex_chr_op_cypher(void);
@@ -26,4 +26,4 @@ void ex_skip_whole_loop(void);
 void ex_switch(void);
 
 void ex_switch_es(void);
-#endif //C_LEARN2_H
+#endif //CLEARN_LEARN_CHAPTER_7_H

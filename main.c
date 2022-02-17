@@ -2,22 +2,20 @@
 //#include <windows.h>
 // load dll file, require window.h file
 #include "header/arithmetic/arithmetic.h"
-#include "header/test/test1.h"
+#include "header/test/test.h"
 #include "header/exam/exam.h"
 #include "utils/md5.h"
 
 
 
 int main() {
-    system("chcp 65001 > null.log");//solve the clion printf chinese garbled code。
-
-
-    system("pause > null.log");
+    quick_sort_dr();
 
     return 0;
 }
 
-
+//system("chcp 65001 > null.log");//solve the clion printf chinese garbled code。
+//("pause > null.log");
 
 
 

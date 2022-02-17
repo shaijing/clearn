@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/1/30.
 //
 
-#ifndef C_PRACTICE2_H
-#define C_PRACTICE2_H
+#ifndef CLEARN_PRACTICE_CHAPTER_6_H
+#define CLEARN_PRACTICE_CHAPTER_6_H
 
 #include "practice.h"
 
@@ -34,4 +34,4 @@ void chuckie(void);
 
 void rabnud(void);
 
-#endif //C_PRACTICE2_H
+#endif //CLEARN_PRACTICE_CHAPTER_6_H

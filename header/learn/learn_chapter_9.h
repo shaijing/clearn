@@ -2,8 +2,8 @@
 // Created by yulin on 2022/1/15.
 //
 /*C Prime Plus , chapter 9*/
-#ifndef C_LEARN4_H
-#define C_LEARN4_H
+#ifndef CLEARN_LEARN_CHAPTER_9_H
+#define CLEARN_LEARN_CHAPTER_9_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -11,7 +11,7 @@
 #include <iso646.h>
 #include <stdlib.h>
 #include <string.h>            /* for strlen() */
-#include "learn4/hotel.h"
+#include "learn_chapter_9/hotel.h"
 
 //
 unsigned long fib(unsigned num);/*This function will use the memory very quickly, when the num is big*/
@@ -44,5 +44,5 @@ void mikado(int);
 
 void ex_value_change();
 void interchange(int * u, int * v);
-#endif //C_LEARN4_H
+#endif //CLEARN_LEARN_CHAPTER_9_H
 

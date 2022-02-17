@@ -2,8 +2,8 @@
 // Created by Prime on 2022/1/2.
 //
 
-#ifndef C_LEARN1_H
-#define C_LEARN1_H
+#ifndef CLEARN_LEARN_H
+#define CLEARN_LEARN_H
 
 
 void now_time(void );
@@ -21,4 +21,4 @@ void value_underflow(void);
 void value_not_match(void);
 
 void char_array(void);
-#endif //C_LEARN1_H
+#endif //CLEARN_LEARN_H

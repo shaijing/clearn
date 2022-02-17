@@ -2,8 +2,8 @@
 // Created by yulin on 2022/1/16.
 //
 /*C Prime Plus , chapter 10*/
-#ifndef C_LEARN5_H
-#define C_LEARN5_H
+#ifndef CLEARN_LEARN_CHAPTER_10_H
+#define CLEARN_LEARN_CHAPTER_10_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -75,4 +75,4 @@ int sum2d_1(int rows, int cols, int ar[rows][cols]);
 void ex_constant_array(void);
 int sum2d_2(const int ar[][COLS], int rows);
 int sum_1(const int ar[], int n);
-#endif //C_LEARN5_H
+#endif //CLEARN_LEARN_CHAPTER_10_H

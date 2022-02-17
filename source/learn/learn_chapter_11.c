@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/1/19.
 //
 /*C Prime Plus , chapter 10*/
-#include "../../header/learn/learn6.h"
+#include "../../header/learn/learn_chapter_11.h"
 
 
 void ex_strings(void){

@@ -2,8 +2,8 @@
 // Created by yulin on 2022/2/7.
 //
 
-#ifndef C_PRACTICE7_H
-#define C_PRACTICE7_H
+#ifndef CLEARN_PRACTICE_CHAPTER_11_H
+#define CLEARN_PRACTICE_CHAPTER_11_H
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -11,7 +11,6 @@
 #include <complex.h>
 #include <string.h>
 #include <stdlib.h>
-#endif //C_PRACTICE7_H
 //11
 char * s_gets_p(char * st, int n);
 
@@ -41,5 +40,7 @@ void str_rev_dr(void);
 
 void str_rev_1(char *);
 void str_rev_1_dr(void);
+#endif //CLEARN_PRACTICE_CHAPTER_11_H
+
 
 

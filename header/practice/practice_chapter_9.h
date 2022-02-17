@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/2/2.
 //
 
-#ifndef C_PRACTICE5_H
-#define C_PRACTICE5_H
+#ifndef CLEARN_PRACTICE_CHAPTER_9_H
+#define CLEARN_PRACTICE_CHAPTER_9_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -29,4 +29,4 @@ double power_p_r(double,int);
 
 void to_base_n(int x, int base);
 void to_binary_base(void);
-#endif //C_PRACTICE5_H
+#endif //CLEARN_PRACTICE_CHAPTER_9_H

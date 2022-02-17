@@ -2,8 +2,8 @@
 // Created by yulin on 2022/2/9.
 //
 
-#ifndef C_PRACTICE9_H
-#define C_PRACTICE9_H
+#ifndef CLEARN_PRACTICE_CHAPTER_13_H
+#define CLEARN_PRACTICE_CHAPTER_13_H
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -34,4 +34,4 @@ void f_append(void);
 
 void r_bin_1(void);
 
-#endif //C_PRACTICE9_H
+#endif //CLEARN_PRACTICE_CHAPTER_13_H

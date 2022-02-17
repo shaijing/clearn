@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/2/1.
 //
 
-#ifndef C_ARITHMETIC_H
-#define C_ARITHMETIC_H
+#ifndef CLEARN_ARITHMETIC_H
+#define CLEARN_ARITHMETIC_H
 
 #include <ctype.h>
 #include <stdio.h>
@@ -30,4 +30,4 @@ void bubble_sort_d_f(double num[],int n);
 
 
 
-#endif //C_ARITHMETIC_H
+#endif //CLEARN_ARITHMETIC_H

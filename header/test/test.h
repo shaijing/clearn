@@ -2,8 +2,8 @@
 // Created by Chaos on 2022/1/28.
 //
 
-#ifndef C_TEST1_H
-#define C_TEST1_H
+#ifndef CLEARN_TEST_H
+#define CLEARN_TEST_H
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -28,4 +28,4 @@ void long_to_str(void);
 
 void a(void);
 
-#endif //C_TEST1_H
+#endif //CLEARN_TEST_H

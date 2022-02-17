@@ -9,8 +9,8 @@
 #include <iso646.h>
 #include <stdlib.h>
 
-#ifndef C_LEARN3_H
-#define C_LEARN3_H
+#ifndef CLEARN_LEARN_CHAPTER_8_H
+#define CLEARN_LEARN_CHAPTER_8_H
 
 void ex_echo(void);
 
@@ -40,4 +40,4 @@ char get_first(void);
 int get_int(void);
 void count(void);
 void ex_menu(void);
-#endif //C_LEARN3_H
+#endif //CLEARN_LEARN_CHAPTER_8_H

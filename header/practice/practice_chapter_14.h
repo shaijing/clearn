@@ -2,8 +2,8 @@
 // Created by yulin on 2022/2/9.
 //
 
-#ifndef C_PRACTICE10_H
-#define C_PRACTICE10_H
+#ifndef CLEARN_PRACTICE_CHAPTER_14_H
+#define CLEARN_PRACTICE_CHAPTER_14_H
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -40,6 +40,6 @@ void initial(void);
 void library_ui(void);
 
 //TODO
-#endif //C_PRACTICE10_H
+#endif //CLEARN_PRACTICE_CHAPTER_14_H
 
 

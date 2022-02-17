@@ -1,8 +1,8 @@
 //
 // Created by yulin on 2022/1/16.
 //
-#ifndef C_HOTEL_H
-#define C_HOTEL_H
+#ifndef CLEARN_HOTEL_H
+#define CLEARN_HOTEL_H
 
 #define QUIT       5
 #define HOTEL1   180.00
@@ -24,4 +24,4 @@ int getnights(void);
 // and displays result
 void showprice(double rate, int nights);
 
-#endif //C_HOTEL_H
+#endif //CLEARN_HOTEL_H

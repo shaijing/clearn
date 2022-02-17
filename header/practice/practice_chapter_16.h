@@ -2,8 +2,8 @@
 // Created by yulin on 2022/2/11.
 //
 
-#ifndef C_PRACTICE11_H
-#define C_PRACTICE11_H
+#ifndef CLEARN_PRACTICE_CHAPTER_16_H
+#define CLEARN_PRACTICE_CHAPTER_16_H
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -33,4 +33,4 @@ void glue(void);
 #include <math.h>
 #define PR(X, ...) printf("Message " #X ": " __VA_ARGS__)
 void variadic(void);
-#endif //C_PRACTICE11_H
+#endif //CLEARN_PRACTICE_CHAPTER_16_H
