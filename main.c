@@ -5,12 +5,12 @@
 #include "header/test/test.h"
 #include "header/exam/exam.h"
 #include "utils/md5.h"
+#include "header/practice/practice_arithmetic.h"
 
 
 
 int main() {
-    quick_sort_dr();
-
+    printf("Hello World!\n");
     return 0;
 }
 

@@ -10,13 +10,13 @@ void exam1_ref(void){//有些冗余，以后再想想怎样优化 TODO 这个参
         scanf("%d",&tmp);
         printf("%d 1\n",tmp);
     }
-    int s[n+1],l[n+1]; //s[]存储次数，下标表示出现了多少次，相对应的出现这么多次的整数值
+    int s[n+1],in_num[n+1]; //s[]存储次数，下标表示出现了多少次，相对应的出现这么多次的整数值
     while(n>=1){
         count=1;
         scanf("%d",&tmp);
-        l[i++]=tmp; //l[]存储输入的整数值，下标从0开始
+        in_num[i++]=tmp; //l[]存储输入的整数值，下标从0开始
         for(j=0;j<i-1;j++){
-            if (tmp==l[j]){
+            if (in_num[j]==tmp){
                 s[++count]=tmp; //下标从2开始，因为目标数字唯一，其他循环时不会到s[max],即已有下标最大存储了值的空间
             }
         }
@@ -147,6 +147,10 @@ void exam1_1(void){
         getchar();//处理换行符
         printf("Please enter next n:");
     }
+
+}
+
+void exam1_2(void){
 
 }
 

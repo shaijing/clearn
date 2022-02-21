@@ -17,6 +17,8 @@ void exam1(void);
 
 void exam1_1(void);
 
+void exam1_2(void);
+
 void exam2(void);
 
 void exam3(void);

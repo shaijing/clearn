@@ -129,7 +129,7 @@ void quick_sort_dr(void) {
     }
 }
 
-void quick_sort(int left, int right, double ar[]) {//
+void quick_sort(int left, int right, int *ar) {//
     double temp, t;
     int l, r;
     if (left > right)
@@ -151,4 +151,19 @@ void quick_sort(int left, int right, double ar[]) {//
     ar[l] = temp;
     quick_sort(left, l - 1, ar);
     quick_sort(r + 1, right, ar);
+}
+
+void queue(void){
+    int num[100] = {6,3,1,7,5,8,9,2,4};
+    int head,tail;
+    head = 0;
+    tail = 9;
+    while (head<tail){
+        printf("%d ",num[head]);
+        head++;
+        num[tail]= num[head];
+        tail++;
+        head++;
+    }
+
 }

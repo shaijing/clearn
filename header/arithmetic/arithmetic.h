@@ -23,10 +23,15 @@ void selection_sort_dr(void);
 
 void insertion_sort(int [],int);
 void insertion_sort_dr(void);
-void quick_sort(int,int,double []);
+
+void quick_sort(int,int,int *);
 void quick_sort_dr(void);
 
 void bubble_sort_d_f(double num[],int n);
+
+void queue(void);
+
+
 
 
 
