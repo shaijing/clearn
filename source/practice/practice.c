@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/28.
 //
-#include "../../header/practice/practice.h"
+#include "../../headers/practice/practice.h"
 void int_to_char(){
     int asciicode;
     printf("Please type an ASCII code value(ctrl^d to quit):");

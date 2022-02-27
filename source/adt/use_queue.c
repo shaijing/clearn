@@ -1,7 +1,7 @@
 //
 // Created by yulin on 2022/2/17.
 //
-#include "../../header/adt/queue.h"
+#include "../../headers/adt/queue.h"
 void q_use(void);
 
 void q_use(void){

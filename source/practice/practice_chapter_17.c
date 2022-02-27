@@ -2,7 +2,7 @@
 // Created by yulin on 2022/2/14.
 //
 
-#include "../../header/practice/practice_chapter_17.h"
+#include "../../headers/practice/practice_chapter_17.h"
 
 void film_2(void){
     struct film_1 * head = NULL;

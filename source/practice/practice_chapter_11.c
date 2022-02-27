@@ -2,7 +2,7 @@
 // Created by yulin on 2022/2/7.
 //
 
-#include "../../header/practice/practice_chapter_11.h"
+#include "../../headers/practice/practice_chapter_11.h"
 
 char * s_gets_p(char * st, int n){
 

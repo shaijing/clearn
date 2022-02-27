@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/2/2.
 //
-#include "../../header/exam/exam.h"
+#include "../../headers/exam/exam.h"
 
 void exam1_ref(void){//有些冗余，以后再想想怎样优化 TODO 这个参考答案有问题，不能对出现次数相同的做出正确判断。
     int n,i=0,j,tmp,count,max=0;

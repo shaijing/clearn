@@ -13,7 +13,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "../../header/arithmetic/arithmetic.h"
+#include "../../headers/arithmetic/arithmetic.h"
 //9.10
 int max_3num(int,int,int);
 

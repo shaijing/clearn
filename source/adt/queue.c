@@ -2,7 +2,7 @@
 // Created by yulin on 2022/2/17.
 //
 /* the Queue type implementation */
-#include "../../header/adt/queue.h"
+#include "../../headers/adt/queue.h"
 
 /* local functions */
 static void CopyToNode(Item item, Node *pn);

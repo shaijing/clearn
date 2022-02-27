@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/2.
 //
-#include "../../header/learn/learn_chapter_7.h"
+#include "../../headers/learn/learn_chapter_7.h"
 
 void ex_chr_op(void){
     char ch;

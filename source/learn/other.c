@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/1/26.
 //
-#include "../../header/learn/other.h"
+#include "../../headers/learn/other.h"
 char * s_gets(char * st, int n){
     char * ret_val;
     char * find;

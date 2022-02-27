@@ -2,7 +2,7 @@
 // Created by yulin on 2022/2/17.
 //
 
-#include "../../header/practice/practice_arithmetic.h"
+#include "../../headers/practice/practice_arithmetic.h"
 
 void isbn_easy_1(void){
     int n;

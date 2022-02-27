@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/2/2.
 //
 
-#include "../../header/practice/practice_chapter_9.h"
+#include "../../headers/practice/practice_chapter_9.h"
 
 int max_3num(int n1, int n2, int n3) {
     int max = n1;

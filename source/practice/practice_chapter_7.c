@@ -2,7 +2,7 @@
 // Created by Chaos on 2022/1/31.
 //
 
-#include "../../header/practice/practice_chapter_7.h"
+#include "../../headers/practice/practice_chapter_7.h"
 
 void divisors() {
     unsigned long num;
@@ -191,6 +191,8 @@ void my_menu() {
             case 5:
                 isQ = true;
                 break;
+            default:
+                ;
         }
         if (isQ == true)
             break;

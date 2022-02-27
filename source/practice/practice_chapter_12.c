@@ -1,7 +1,7 @@
 //
 // Created by yulin on 2022/2/9.
 //
-#include "../../header/practice/practice_chapter_12.h"
+#include "../../headers/practice/practice_chapter_12.h"
 static unsigned long f_seed = 1;//随机数种子
 static unsigned f_t = 0;
 void s_seed(unsigned int seed){

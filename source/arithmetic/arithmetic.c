@@ -1,7 +1,7 @@
 //
 // Created by Chaos on 2022/2/1.
 //
-#include "../../header/arithmetic/arithmetic.h"
+#include "../../headers/arithmetic/arithmetic.h"
 
 
 void bucket_sort() {/*桶排序简单版，浪费空间*/
@@ -130,7 +130,7 @@ void quick_sort_dr(void) {
 }
 
 void quick_sort(int left, int right, int *ar) {//
-    double temp, t;
+    int temp, t;
     int l, r;
     if (left > right)
         return;
@@ -153,7 +153,7 @@ void quick_sort(int left, int right, int *ar) {//
     quick_sort(r + 1, right, ar);
 }
 
-void queue(void){
+void queue_easy(void){
     int num[100] = {6,3,1,7,5,8,9,2,4};
     int head,tail;
     head = 0;
@@ -165,5 +165,33 @@ void queue(void){
         tail++;
         head++;
     }
+
+}
+
+void stack_easy(void){
+    char arr[101],s[101];
+    int top = 0;
+    unsigned long long len,mid,next,i,j;
+    s_gets(arr,101);
+    len = strlen(arr);
+    mid = len/2-1;
+    for (i=0;i<=mid;i++){
+        s[++top] = arr[i];
+    }
+    if(len % 2 ==0)
+        next =mid+ 1;
+    else
+        next =mid +2;
+
+    for (j = next; j <= len-1 ; ++j) {
+        if(s[top]!=arr[j])
+            break;
+        top--;
+    }
+    if(top==0)
+        printf("Yes!\n");
+    else
+        printf("No!\n");
+
 
 }

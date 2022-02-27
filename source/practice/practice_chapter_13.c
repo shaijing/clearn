@@ -1,7 +1,7 @@
 //
 // Created by yulin on 2022/2/9.
 //
-#include "../../header/practice/practice_chapter_13.h"
+#include "../../headers/practice/practice_chapter_13.h"
 void r_file(void){
     int ch;
     FILE * fp,* fo;

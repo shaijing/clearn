@@ -5,7 +5,7 @@
 #ifndef CLEARN_PRACTICE_CHAPTER_10_H
 #define CLEARN_PRACTICE_CHAPTER_10_H
 //10.13
-#include "../../header/arithmetic/arithmetic.h"
+#include "../../headers/arithmetic/arithmetic.h"
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>

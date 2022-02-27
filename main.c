@@ -1,21 +1,26 @@
-#include "header/practice/practice_chapter_17.h"
+#include "headers/practice/practice_chapter_9.h"
 //#include <windows.h>
 // load dll file, require window.h file
-#include "header/arithmetic/arithmetic.h"
-#include "header/test/test.h"
-#include "header/exam/exam.h"
+#include "headers/arithmetic/arithmetic.h"
+#include "headers/test/test.h"
+#include "headers/exam/exam.h"
 #include "utils/md5.h"
-#include "header/practice/practice_arithmetic.h"
+#include "headers/practice/practice_arithmetic.h"
 
 
 
 int main() {
-    printf("Hello World!\n");
+    long double t = 999999999999.9;
+    typedef unsigned int *my_int;
+    int a = -1111;
+    int *a_p = &a;
+    printf("%u",(unsigned int)a);
+    system("pause > null.log");
     return 0;
 }
 
 //system("chcp 65001 > null.log");//solve the clion printf chinese garbled code。
-//("pause > null.log");
+
 
 
 

@@ -4,7 +4,7 @@
 #include <time.h>
 #include <stdio.h> //or #define printf __mingw_printf
 #include <string.h>
-# include "../../header/learn/learn.h"
+# include "../../headers/learn/learn.h"
 
 
 
