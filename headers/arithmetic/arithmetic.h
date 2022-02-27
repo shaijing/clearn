@@ -12,6 +12,7 @@
 #include <complex.h>
 #include <string.h>
 #include <stdlib.h>
+extern char * s_gets(char *,int);
 void bucket_sort(void);//桶排序
 
 
@@ -29,7 +30,9 @@ void quick_sort_dr(void);
 
 void bubble_sort_d_f(double num[],int n);
 
-void queue(void);
+void queue_easy(void);
+
+void stack_easy(void);
 
 
 

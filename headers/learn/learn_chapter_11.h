@@ -54,7 +54,7 @@ void ex_fput();
 
 
 //11.3.3 printf() function
-//TODO
+
 
 /*11.4 customize input/output function*/
 void ex_put_put();
