@@ -6,15 +6,12 @@
 #include "headers/exam/exam.h"
 #include "utils/md5.h"
 #include "headers/practice/practice_arithmetic.h"
-
+#include "headers/learn/high_precision.h"
+#include "headers/practice/practice_chapter_17.h"
 
 
 int main() {
-    long double t = 999999999999.9;
-    typedef unsigned int *my_int;
-    int a = -1111;
-    int *a_p = &a;
-    printf("%u",(unsigned int)a);
+
     system("pause > null.log");
     return 0;
 }

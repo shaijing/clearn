@@ -13,8 +13,7 @@
 // OR typedef struct item {int gumption; int charisma;} Item;
 // OR  (for mall.c)
 /**/
-typedef struct item
-{
+typedef struct item {
     long arrive;      // the time when a customer joins the queue
     int processtime;  // the number of consultation minutes desired
 } Item;

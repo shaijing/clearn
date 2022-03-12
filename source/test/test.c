@@ -103,3 +103,13 @@ void a(void){
     printf("%s",num_name);
 }
 
+void string_test(){
+    typedef char *string;
+    string s2 = "bsdfasf";
+    string s1 = (string) malloc(5);
+    scanf("%s", s1);
+    *s1 = 'a';
+    //*s2 = 'a' will show segment fault
+    printf("s1: %s\ns2: %s",s1,s2);
+    free(s1);
+}

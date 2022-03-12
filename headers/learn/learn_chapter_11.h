@@ -14,6 +14,7 @@
 #include "other.h"
 
 
+
 void ex_strings(void);
 
 
@@ -58,7 +59,9 @@ void ex_fput();
 
 /*11.4 customize input/output function*/
 void ex_put_put();
-void ex_put1(const char * string);
+
+void ex_put1(const char *string);
+
 int ex_put2(const char *);
 
 
@@ -112,12 +115,16 @@ void ex_sprintf(void);
 /*11.6 string examples*/
 //sort string
 void ex_sort_string(void);
+
 void stsrt(char *strings[], int num);/* string-sort function */
 
 
 /*11.7 ctype.h*/
 //modify string
 void ex_mod_str(void);
+
 void ToUpper(char *);
+
 int PunctCount(const char *);
+
 #endif //CLEARN_LEARN_CHAPTER_11_H

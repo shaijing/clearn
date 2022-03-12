@@ -4,6 +4,7 @@
 
 #include "../../headers/practice/practice_chapter_17.h"
 
+
 void film_2(void){
     struct film_1 * head = NULL;
     struct film_1 * prev,* current;
@@ -17,6 +18,7 @@ void film_2(void){
             prev->next = current;
         current->next = NULL;
         strcpy(current->title,input);
+        //*(current->title) = *(input);//it's not work, for it's only receive the first value.
         puts("Enter your rating<0-10>:");
         scanf("%d",&current->rating);
         while (getchar()!='\n')
@@ -82,3 +84,4 @@ void film_3(void){
 void showmovies(Item item){
     printf("Movie: %s  Rating: %d\n", item.title,item.rating);
 }
+
