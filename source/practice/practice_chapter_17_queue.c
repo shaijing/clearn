@@ -99,3 +99,26 @@ void mall() {
 
 
 }
+// x = average time, in minutes, between customers
+// return value is true if customer shows up this minute
+bool newcustomer(double x)
+{
+    if (rand() * x / RAND_MAX < 1)
+        return true;
+    else
+        return false;
+}
+
+// when is the time at which the customer arrives
+// function returns an Item structure with the arrival time
+// set to when and the processing time set to a random value
+// in the range 1 - 3
+Item customertime(long when)
+{
+    Item cust;
+
+    cust.processtime = rand() % 3 + 1;
+    cust.arrive = when;
+
+    return cust;
+}

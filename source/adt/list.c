@@ -48,7 +48,7 @@ unsigned int ListItemCount(const List *plist) {
 
 /* creates node to hold item and adds it to the end of */
 /* the list pointed to by plist (slow implementation)  */
-bool AddItem(Item item, List *plist) {
+bool L_AddItem(Item item, List *plist) {
     Node *pnew;
     Node *scan = *plist;
 
@@ -69,7 +69,7 @@ bool AddItem(Item item, List *plist) {
 
 
 /* visit each node and execute function pointed to by pfun */
-void Traverse(const List *plist, void (*pfun)(Item item)) {
+void L_Traverse(const List *plist, void (*pfun)(Item item)) {
     Node *pnode = *plist; /* set to start of list   */
     while (pnode != NULL) {
         (*pfun)(pnode->item);   /* apply function to item */

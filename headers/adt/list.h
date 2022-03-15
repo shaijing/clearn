@@ -56,7 +56,7 @@ unsigned int ListItemCount(const List *plist);
 /* Post-conditions:   if possible, function adds item to end    */
 /*                    of list and returns True; otherwise the   */
 /*                    function returns False                    */
-bool AddItem(Item item, List *plist);
+bool L_AddItem(Item item, List *plist);
 
 /* Operation:         apply a function to each item in list     */
 /* Preconditions:     plist points to an initialized list       */
@@ -64,7 +64,7 @@ bool AddItem(Item item, List *plist);
 /*                    Item argument and has no return value     */
 /* Post-condition:    the function pointed to by pfun is        */
 /*                    executed once for each item in the list   */
-void Traverse(const List *plist, void(*pfun)(Item item));
+void L_Traverse(const List *plist, void(*pfun)(Item item));
 
 /* operation:        free allocated memory, if any              */
 /* Preconditions:    plist points to an initialized list        */
