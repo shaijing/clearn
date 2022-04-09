@@ -7,10 +7,17 @@
 #include "utils/md5.h"
 #include "headers/practice/practice_arithmetic.h"
 #include "headers/learn/high_precision.h"
-#include "headers/practice/practice_chapter_17.h"
+#include "headers/practice/practice_chapter_16.h"
+
+
+
 
 
 int main() {
+    int a=1,b=2;
+    double c = 1.0, d =2.0;
+    printf("%d\n", min(a,b));
+    printf("%f", min(c,d));
 
     system("pause > null.log");
     return 0;
