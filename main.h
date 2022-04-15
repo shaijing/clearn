@@ -29,13 +29,13 @@
 void OS_TYPE(void);
 void OS_TYPE(void){
 #if defined(_WIN16) || defined(_WIN32) || defined(_WIN64)
-    printf("windows");
+    printf("windows\n");
 #elif defined(__linux__)
-    printf("linux");
+    printf("linux\n");
 #elif defined(__APPLE__)
-	printf("apple");
+	printf("apple\n");
 #else
-	printf("other");
+	printf("other\n");
 #endif
 }
 #endif //CLEARN_MAIN_H
