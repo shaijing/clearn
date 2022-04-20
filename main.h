@@ -14,15 +14,15 @@
 #endif
 
 
-#include "headers/practice/practice_chapter_9.h"
+#include "practice/practice_chapter_9.h"
 //#include <windows.h>
 // load dll file, require window.h file
-#include "headers/arithmetic/arithmetic.h"
-#include "headers/test/test.h"
-#include "headers/exam/exam.h"
-#include "headers/practice/practice_arithmetic.h"
-#include "headers/learn/high_precision.h"
-#include "headers/practice/practice_chapter_16.h"
+#include "arithmetic/arithmetic.h"
+#include "test/test.h"
+#include "exam/exam.h"
+#include "practice/practice_arithmetic.h"
+#include "learn/high_precision.h"
+#include "practice/practice_chapter_16.h"
 
 
 
