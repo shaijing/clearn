@@ -1,0 +1,14 @@
+{
+  "config_appl": "file",
+  "version": "0.1.0",
+  "resources": {
+    "key_p": "NA",
+    "key_n": "WO",
+    "key_e": "local",
+    "key_ze": "na",
+    "key_le": "na",
+    "key_name": "na",
+    "key_type": "file",
+    "key_ID": "na"
+  }
+}
