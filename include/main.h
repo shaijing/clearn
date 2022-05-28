@@ -4,6 +4,7 @@
 
 #ifndef CLEARN_MAIN_H
 #define CLEARN_MAIN_H
+#define LOG(...)  printf(__VA_ARGS__);
 #pragma c9x on
 
 /*#if __STDC_VERSION__ != 201112L
@@ -13,8 +14,7 @@
 #error Not C9X
 #endif
 
-
-#include "practice/practice_chapter_9.h"
+#include "practice/practice_chapter_4.h"
 //#include <windows.h>
 // load dll file, require window.h file
 #include "arithmetic/arithmetic.h"
@@ -23,7 +23,7 @@
 #include "practice/practice_arithmetic.h"
 #include "learn/high_precision.h"
 #include "practice/practice_chapter_16.h"
-
+#include "practice/practice_chapter_3.h"
 
 
 void OS_TYPE(void);

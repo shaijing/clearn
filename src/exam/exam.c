@@ -38,10 +38,10 @@ void exam1() {//太复杂了。
     int n_s;
     printf("Please enter n:");
     n_s = scanf("%d", &n);
-/*    if(n_s !=1){
-        printf("Error!");
-        printf("Please enter n:");
-    }*/
+    /*    if(n_s !=1){
+            printf("Error!");
+            printf("Please enter n:");
+        }*/
     while (n >= 1) {
 
         if (n == 1) {
@@ -137,7 +137,8 @@ void exam1_1(void) {
                     t_temp = numn[j];
                     numn[j] = numn[j + 1];
                     numn[j + 1] = t_temp;
-                } else if (numn[j].n == numn[j + 1].n && numn[j].num < numn[j + 1].num) {
+                }
+                else if (numn[j].n == numn[j + 1].n && numn[j].num < numn[j + 1].num) {
                     NUMN t_temp;
                     t_temp = numn[j];
                     numn[j] = numn[j + 1];
@@ -151,9 +152,8 @@ void exam1_1(void) {
 
 }
 
-void exam1_2(void) {
 
-}
+
 
 void exam2(void) {
     char a[14];//contain the isbn code,including '\0'
@@ -177,14 +177,14 @@ void exam2(void) {
     }
 }
 
-int mycmp(const void *p1, const void *p2) {
-    stu * ptr_1 = (stu*)p1;
-    stu * ptr_2 = (stu*)p2;
+int mycmp(const void* p1, const void* p2) {
+    stu* ptr_1 = (stu*)p1;
+    stu* ptr_2 = (stu*)p2;
     float ave_1 = ptr_1->ave;
     float ave_2 = ptr_2->ave;
-    if(ave_1<ave_2)
+    if (ave_1 < ave_2)
         return 1;
-    else if(ave_1==ave_2)
+    else if (ave_1 == ave_2)
         return 0;
     else
         return -1;
@@ -198,7 +198,7 @@ void exam3(void) {
     printf("Please enter the value:\n");
     for (int i = 0; i < n; ++i) {
         scanf("%d %s %f %f %f", &student[i].id, student[i].name, &student[i].grade1, &student[i].grade2,
-              &student[i].grade3);
+            &student[i].grade3);
         student[i].ave = (student[i].grade1 + student[i].grade2 + student[i].grade3) / 3;
     }
     for (int i = 0; i < n - 1; ++i) {
@@ -223,16 +223,16 @@ void exam3_1(void) {
     printf("Please enter the value:\n");
     for (int i = 0; i < n; ++i) {
         scanf("%d %s %f %f %f", &student[i].id, student[i].name, &student[i].grade1, &student[i].grade2,
-              &student[i].grade3);
+            &student[i].grade3);
         student[i].ave = (student[i].grade1 + student[i].grade2 + student[i].grade3) / 3;
     }
-    qsort(&student[0],n, sizeof(stu),mycmp);
+    qsort(&student[0], n, sizeof(stu), mycmp);
     for (int i = 0; i < n; ++i) {
         printf("%d,%s,%.2f\n", student[i].id, student[i].name, student[i].ave);
     }
 }
 
-int DigitNum(const char *str) {
+int DigitNum(const char* str) {
     int n = 0;
     int i = 0;
     while (*(str + i) != '\0') {
@@ -250,7 +250,7 @@ void DigitNum_dr(void) {
 }
 
 void question_2(void) {
-    int num[10] = {10, 9, 5, 4, -1, 50, 4, 8, 6, 9};
+    int num[10] = { 10, 9, 5, 4, -1, 50, 4, 8, 6, 9 };
     int min = num[0];
     int t_n;
     for (int i = 0; i < 10; ++i) {

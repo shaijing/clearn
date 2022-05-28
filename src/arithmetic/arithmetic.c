@@ -14,7 +14,7 @@ void bucket_sort() {/*桶排序简单版，浪费空间*/
     }
     for (i = 0; i < 10; i++)
         for (j = 0; j < array[i]; j++)
-            printf("%d ", i);
+            printf("%d\n ", i);
 
 }
 
@@ -24,11 +24,11 @@ void bubble_sort_dr() {
     printf("Please enter the n:");
     scanf("%d", &n);
     printf("Please enter numbers:");
-/*        if(n == 1){
-            scanf("%d",&temp);
-            printf("%d 1",temp);
-            break;
-        }*/
+    /*        if(n == 1){
+                scanf("%d",&temp);
+                printf("%d 1",temp);
+                break;
+            }*/
     int array[n];
     for (i = 0; i < n; i++) {
         scanf("%d", &array[i]);
@@ -79,8 +79,8 @@ void bubble_sort_d_f(double num[], int n) {
 void selection_sort(int arr[], int len) {
     int temp, n;
     for (int i = 0; i < len; ++i) {
-        int min = arr[i];
-        for (int j = i + 1; j < len; ++j) {
+        int min = arr[i]; // 记录最小值，第一个元素默认最小
+        for (int j = i + 1; j < len; ++j) { // 访问未排序的元素
             if (arr[j] < min) {
                 min = arr[j];
                 n = j;
@@ -94,27 +94,78 @@ void selection_sort(int arr[], int len) {
 }
 
 void selection_sort_dr(void) {
-    int a[10] = {8, 99, -1, 55, -20, 30, 40, 11, 18, 20};
-    selection_sort(a, 10);
+    int a[10] = { 8, 99, -1, 55, -20, 30, 40, 11, 18, 20 };
+    selection_sort(a, (int)sizeof(a) / sizeof(*a));
     for (int i = 0; i < 10; ++i) {
         printf("%d ", a[i]);
     }
 }
 
-void insertion_sort(int num[], int len) { //didn't comprehension
+void insertion_sort(int arr[], int len) { //didn't comprehension
     int i, j, temp;
-    for (i = 1; i < len; i++) {
-        temp = num[i];
-        for (j = i; j > 0 && num[j - 1] > temp; j--)
-            num[j] = num[j - 1];
-
+    for (i = 1;i < len;i++) {
+        temp = arr[i];
+        for (j = i;j > 0 && arr[j - 1] > temp;j--)
+            arr[j] = arr[j - 1];
+        arr[j] = temp;
     }
 }
 
 void insertion_sort_dr(void) {
+    int a[10] = { 9,6,8,3,0,4,5,7,1,2 };
+    insertion_sort(a, 10);
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", a[i]);
+    }
+
 
 }
 
+void shell_sort(int arr[], int len) {
+    int gap, i, j;
+    int temp;
+    for (gap = len >> 1; gap > 0; gap = gap >> 1)
+        for (i = gap; i < len; i++) {
+            temp = arr[i];
+            for (j = i - gap; j >= 0 && arr[j] > temp; j -= gap)
+                arr[j + gap] = arr[j];
+            arr[j + gap] = temp;
+        }
+}
+inline int min(int x, int y);
+int min(int x, int y) {
+    return x < y ? x : y;
+}
+
+void merge_sort(int arr[], int len) {
+    int* a = arr;
+    int* b = (int*)malloc(len * sizeof(int));
+    int seg, start;
+    for (seg = 1; seg < len; seg += seg) {
+        for (start = 0; start < len; start += seg + seg) {
+            int low = start, mid = min(start + seg, len), high = min(start + seg + seg, len);
+            int k = low;
+            int start1 = low, end1 = mid;
+            int start2 = mid, end2 = high;
+            while (start1 < end1 && start2 < end2)
+                b[k++] = a[start1] < a[start2] ? a[start1++] : a[start2++];
+            while (start1 < end1)
+                b[k++] = a[start1++];
+            while (start2 < end2)
+                b[k++] = a[start2++];
+        }
+        int* temp = a;
+        a = b;
+        b = temp;
+    }
+    if (a != arr) {
+        int i;
+        for (i = 0; i < len; i++)
+            b[i] = a[i];
+        b = a;
+    }
+    free(b);
+}
 void quick_sort_dr(void) {
     int i, j, n;
 
@@ -123,13 +174,13 @@ void quick_sort_dr(void) {
     for (i = 0; i < n; i++) {
         scanf("%lf", &ar[i]);
     }
-    quick_sort(0, n - 1, ar);/* Must pay attention to the argument n-1 */
+    //quick_sort(0, n - 1, ar);/* Must pay attention to the argument n-1 */
     for (j = 0; j < n; j++) {
         printf("%lf ", ar[j]);
     }
 }
 
-void quick_sort(int left, int right, int *ar) {//
+void quick_sort(int left, int right, int* ar) {//
     int temp, t;
     int l, r;
     if (left > right)
@@ -153,42 +204,42 @@ void quick_sort(int left, int right, int *ar) {//
     quick_sort(r + 1, right, ar);
 }
 
-void queue_easy(void){
-    int num[100] = {6,3,1,7,5,8,9,2,4};
-    int head,tail;
+void queue_easy(void) {
+    int num[100] = { 6,3,1,7,5,8,9,2,4 };
+    int head, tail;
     head = 0;
     tail = 9;
-    while (head<tail){
-        printf("%d ",num[head]);
+    while (head < tail) {
+        printf("%d ", num[head]);
         head++;
-        num[tail]= num[head];
+        num[tail] = num[head];
         tail++;
         head++;
     }
 
 }
 
-void stack_easy(void){
-    char arr[101],s[101];
+void stack_easy(void) {
+    char arr[101], s[101];
     int top = 0;
-    unsigned long long len,mid,next,i,j;
-    s_gets(arr,101);
+    unsigned long long len, mid, next, i, j;
+    s_gets(arr, 101);
     len = strlen(arr);
-    mid = len/2-1;
-    for (i=0;i<=mid;i++){
+    mid = len / 2 - 1;
+    for (i = 0;i <= mid;i++) {
         s[++top] = arr[i];
     }
-    if(len % 2 ==0)
-        next =mid+ 1;
+    if (len % 2 == 0)
+        next = mid + 1;
     else
-        next =mid +2;
+        next = mid + 2;
 
-    for (j = next; j <= len-1 ; ++j) {
-        if(s[top]!=arr[j])
+    for (j = next; j <= len - 1; ++j) {
+        if (s[top] != arr[j])
             break;
         top--;
     }
-    if(top==0)
+    if (top == 0)
         printf("Yes!\n");
     else
         printf("No!\n");

@@ -28,4 +28,6 @@ void long_to_str(void);
 
 void a(void);
 
+void test_for(void);
+
 #endif //CLEARN_TEST_H
